@@ -22,3 +22,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/projects/index', [App\Http\Controllers\ProjectsController::class, 'index'])->name('projects');
+route::get('/projects/create', [App\Http\Controllers\ProjectsController::class, 'create'])->name('projects.create');
+route::post('/projects', [App\Http\Controllers\ProjectsController::class, 'store'])->name('projects.store');
+route::get('/projects/{id}', [App\Http\Controllers\ProjectsController::class, 'show'])->name('projects.show');
+route::get('/projects/{id}/edit', [App\Http\Controllers\ProjectsController::class, 'edit'])->name('projects.edit');
+route::put('/projects/{id}', [App\Http\Controllers\ProjectsController::class, 'update'])->name('projects.update');
+route::delete('/projects/{id}', [App\Http\Controllers\ProjectsController::class, 'destroy'])->name('projects.delete');
