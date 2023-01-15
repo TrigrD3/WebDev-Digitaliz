@@ -8,13 +8,16 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                    {{-- make card button --}}
+                    <div class="row">
+                        <div class="col">
+                            <a href="{{ route('projects.create') }}" class="btn btn-primary">Create Project</a>
                         </div>
-                    @endif
 
-                    {{ __('You are logged in!') }}
+                        <div class="col">
+                            <a href="{{ route('projects') }}" class="btn btn-primary">Show Projects</a>
+                        </div>
+                    {{-- end make card button --}}
                 </div>
             </div>
         </div>

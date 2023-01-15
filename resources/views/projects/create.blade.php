@@ -30,6 +30,11 @@
           <label for="end_date">End Date</label>
           <input type="date" name="end_date" id="end_date" class="form-control" >
         </div>
+
+        <div class="form-group">
+          <label for="progress">Progress</label>
+          <input type="number" name="progress" id="progress" class="form-control">
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>

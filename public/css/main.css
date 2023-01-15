@@ -1,0 +1,15 @@
+.container2 {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(238, 231, 231);
+    padding: 20px;
+}
+
+body {
+    background-color: rgba(34, 62, 85, 0.411) !important;
+}
+
+.credit {
+    padding-top: 10px;
+}

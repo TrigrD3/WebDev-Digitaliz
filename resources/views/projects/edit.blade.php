@@ -9,7 +9,7 @@
         @method('PUT')
         <div class="form-group">
           <label for="project_name">Project Name</label>
-          <input type="text" name="project_name" id="project_name" class="form-control" value="{{ $project->name }}">
+          <input type="text" name="project_name" id="project_name" class="form-control" value="{{ $project->project_name }}">
         </div>
   
         <div class="form-group">
@@ -25,6 +25,11 @@
         <div class="form-group">
           <label for="start_date">Start Date</label>
           <input type="date" name="start_date" id="start_date" class="form-control" value="{{ $project->start_date }}">
+        </div>
+
+        <div class="form-group">
+          <label for="progress">Progress</label>
+          <input type="number" name="progress" id="progress" class="form-control" value="{{ $project->progress }}">
         </div>
   
         <div class="form-group">

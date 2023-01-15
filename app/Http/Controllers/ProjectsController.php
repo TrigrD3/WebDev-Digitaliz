@@ -14,13 +14,14 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = new Project();
+        $projects = Project::simplePaginate(5);
 
         $data = [
-            'projects' => $projects->getAllProjects()
+            'projects' => $projects
         ];
         return view('projects.index', $data);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -47,6 +48,7 @@ class ProjectsController extends Controller
         $project->projects_leader = request('projects_leader');
         $project->start_date = request('start_date');
         $project->end_date = request('end_date');
+        $project->progress = request('progress');
         $project->save();
 
         return redirect('/projects/index');
@@ -99,6 +101,7 @@ class ProjectsController extends Controller
         $project->projects_leader = request('projects_leader');
         $project->start_date = request('start_date');
         $project->end_date = request('end_date');
+        $project->progress = request('progress');
         $project->save();
         return redirect()->route('projects');
     }
