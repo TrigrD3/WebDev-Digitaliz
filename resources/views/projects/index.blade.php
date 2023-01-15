@@ -9,7 +9,7 @@
   </div>
 
   <div class="container container2">
-    <div class="row">
+    <div class="row overflow-auto">
       <div class="col">
           <table class="table table-hover">
               <thead>
