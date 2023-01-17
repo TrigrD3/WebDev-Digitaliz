@@ -1,7 +1,7 @@
 <h1>Profile</h1>
 Nama: Muhammad Jatmika Aryaputra
 
-Instansi: Universitas Lambung 
+Instansi: Universitas Lambung Mangkurat
 
 Semester: 7
 
