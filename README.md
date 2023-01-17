@@ -3,6 +3,10 @@ Nama: Muhammad Jatmika Aryaputra
 
 Instansi: Universitas Lambung Mangkurat
 
+email: arya66151@gmail.com
+
+linkedin: https://www.linkedin.com/in/aryaputra132/
+
 Semester: 7
 
 Domisili: Banjarmasin
@@ -46,7 +50,7 @@ Run <pre><code>composer install</code></pre> to install all the necessary depend
 
 Run <pre><code>npm install</code></pre> to install all the necessary dependencies
 
-Run <pre>npm run dev<code></code></pre> to compile the assets
+Run <pre>npm run build<code></code></pre> to compile the assets
 
 Run <pre><code>php artisan key:generate</code></pre> to generate a new encryption key for your application
 
@@ -55,6 +59,8 @@ Run <pre>php artisan serve<code></code></pre> to start the built-in PHP web serv
 
 <h1>Database</h1>
 I'm using MySQL database. You can change the database in .env file if there is no .env file, just make a new one and copy the content from .env.example file.
+
+db name: webdev-digitaliz
 
 username: root
 
